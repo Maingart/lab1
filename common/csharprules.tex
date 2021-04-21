@@ -26,9 +26,9 @@
 	language=[Sharp]C,
 	breaklines=true,
 	frame=single,
-	tabsize=2,
+	tabsize=1,
 	breakatwhitespace=true,
-	captionpos=bl,
+	captionpos=b,
 	backgroundcolor=\color{bgcolor},
 	basicstyle=\footnotesize\ttfamily,
 	morekeywords={
@@ -39,7 +39,27 @@
 	showstringspaces=false,
 	identifierstyle=\color{sblue},
 	extendedchars=true,
-	literate=*{\{}{{{\color[rgb]{0.9, 0.9, 0.9}}}}1{\}}{{{\color[rgb]{0.9, 0.9, 0.9}}}}1,
+	literate=
+		{*0}{{{\ProcessDigit{0}}}}1
+		{*1}{{{\ProcessDigit{1}}}}1
+		{*2}{{{\ProcessDigit{2}}}}1
+		{*3}{{{\ProcessDigit{3}}}}1
+		{*4}{{{\ProcessDigit{4}}}}1
+		{*5}{{{\ProcessDigit{5}}}}1
+		{*6}{{{\ProcessDigit{6}}}}1
+		{*7}{{{\ProcessDigit{7}}}}1
+		{*8}{{{\ProcessDigit{8}}}}1
+		{*9}{{{\ProcessDigit{9}}}}1
+		{*\}}{{\symbolstyle{\}}}}1
+		{*\{}{{\symbolstyle{\{}}}1
+		{*(}{{\symbolstyle{(}}}1
+		{*)}{{\symbolstyle{)}}}1
+		{*=}{{\symbolstyle{$=$}}}1
+		{*;}{{\symbolstyle{$;$}}}1
+		{*>}{{\symbolstyle{$>$}}}1
+		{*<}{{\symbolstyle{$<$}}}1
+		{**}{{\symbolstyle{*}}}1
+		{*\%}{{\symbolstyle{$\%$}}}1,
 }
 
 \lstset{escapechar=@, style=solarizedcsharp}
