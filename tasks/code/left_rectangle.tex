@@ -1,0 +1,21 @@
+\def \itemtitle {Метод левых прямоугольников на языке \textit \Csh}
+
+\item 
+	\itemtitle
+	\[ \int \limits_{a}^{b} {f(x) ~ dx} 
+	\approx \sum \limits_{i=0}^{n-1} f({x}_{i})({x}_{i+1} - {x}_{i}) \]
+	\begin{lstlisting}[caption=\itemtitle]
+		static double LeftRectangle(
+		 double a, double b, double n
+		) {
+			var h = (b - a) / n;
+			var sum = 0d;
+			for (var i = 0; i <= n - 1; i++) {
+				var x = a + i * h;
+				sum += Program.function(x);
+			}
+			var result = h * sum;
+			return result;
+		}
+	\end{lstlisting}
+	Ответ: $\displaystyle \task$ $\approx$ 0.219383661620837, $\Delta$ = 0.000000338389163

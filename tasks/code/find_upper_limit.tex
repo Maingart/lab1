@@ -1,0 +1,12 @@
+\begin{lstlisting}
+	static double findUpperLimit(double epsilon) {
+		const double step = 1;
+		var lim = 1d;
+		var val = 0d;
+		do {
+			lim += step;
+			val = Program.function(lim);
+		} while (Math.Abs(val) > epsilon);
+		return lim;
+	}
+\end{lstlisting}

@@ -1,0 +1,22 @@
+\def \itemtitle {Метод трапеции на языке \textit \Csh}
+
+\item
+	\itemtitle
+	\[ \displaystyle \int \limits_{a}^{b} {f(x) ~ dx} \approx \sum\limits_{i=0}^{n-1}
+	f\left(\dfrac{x_{i} + x_{i+1}}{2}\right)(x_{i+1} - {x}_{i})  \]
+	\begin{lstlisting}[caption=\itemtitle]
+		static double Trapeze(double a, double b, double n) {
+			var h = (b - a) / n;
+			var sum = 0d;
+			var a1 = 0d;
+			for(var i = 0; i <= n - 1; i++) {
+				a1 = a + h;
+				sum += h * (
+					Program.function(a) + Program.function(a1)
+				) / 2;
+				a = a1;
+			}
+			return sum;
+		}
+	\end{lstlisting}
+	Ответ: $\displaystyle \task$ $\approx$ 0.219383459290611, $\Delta$ = 0.000000540719389

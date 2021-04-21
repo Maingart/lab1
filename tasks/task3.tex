@@ -1,0 +1,67 @@
+\newcommand{\equationFirst}{
+	{y}' = \dfrac{\cos^{2}{y} \cdot \cos{x}}{\sin^2{x} - 1}
+}
+
+\newcommand{\equationSecond}{
+	{x}^2 + {y}^2 + xyy' = 0 
+}
+
+\newcommand{\equationThird}{
+	{y}' = \dfrac{x + y}{y - x + 2}
+}
+
+\newcommand{\equationFourth}{
+	{y}' \cdot e^{x} + {y} = 3e^{-x}
+}
+
+\section{Задача 3}
+\subsection{Постановка задачи}
+Для следующих дифференциальных уравнений определить тип и найти общее решение с помощью программ компьютерной математики:
+
+\begin{enumerate}                                                   
+	\item $ \equationFirst $          
+	\item $ \equationSecond $
+	\item $ \equationThird $                             
+	\item $ \equationFourth $
+\end{enumerate}
+
+\subsection{Решение}
+
+Поиск аналитического решения будем проводить в системе компьютерной математики Wolfram Alpha
+
+\begin{enumerate}                                                   
+	\item 
+		$ \equationFirst $
+		
+		\textit{Тип уравнения:} уравнение с разделяющимися переменными
+		
+		\textit{Решение:} 
+		$ \tg{y} = \dfrac{\ln{\frac{\sin{x} - 1}{\sin{x} + 1}}}{2} + C, C \in \rational $ 
+
+	\item 
+		$ \equationSecond $
+		
+		\textit{Тип уравнения:} однородное уравнение
+		
+		\textit{Решение:}
+		$ \dfrac{1}{\sqrt[4]{\frac{2y^2}{x^2} + 1}} = Cx, C \in \rational $ 
+		
+	\newpage
+		
+	\item 
+		$ \equationThird $
+		
+		\textit{Тип уравнения:} приводящееся к однородному уравнению
+		
+		\textit{Решение:}
+		$ \sqrt{y^2 + (4 - 2x) y - x^2 + 2} = C, C \in \rational $    
+		               
+	\item
+		$ \equationFourth $
+		
+		\textit{Тип уравнения:} линейное уравнение
+		
+		\textit{Решение:}
+		$ y = \dfrac{Ce^{e^{-x} + x} + 3e^x + 3}{e^x}, C \in \rational $ 
+		
+\end{enumerate}

@@ -1,0 +1,23 @@
+\section{Задача 1. Найти интеграл}
+\subsection{Постановка задачи}
+Найти следующий интеграл с подробным описанием всех действий:
+
+\[\int \frac{ \sqrt{1 - \sin{x}} }{ \sec{x} } ~ dx\]
+
+\subsection{Решение}
+
+Перепишем исходный интеграл:
+\begin{align*}
+	\int \cos{x} \cdot \sqrt{1 - \sin{x}} ~ dx
+\end{align*}
+
+После занесения $\ 1 - \sin{x} $ под знак дифференциала получается известный табличный интеграл
+
+\begin{align*}
+	\int  \cos{x} \cdot \sqrt{1 - \sin{x}} ~ dx
+	& = -\int \sqrt{1 - \sin{x}} ~ d(1 - \sin{x}) = \\
+	& = -\frac{2 (1 - \sin{x})^\frac{3}{2}}{3} + {C},
+	C \in \rational
+\end{align*}
+
+Ответ: $ \displaystyle -\frac{2 (1 - \sin{x})^\frac{3}{2}}{3} + {C}, C \in \rational $

@@ -1,0 +1,36 @@
+\newcommand{\task}{
+	\int\limits_1^{\infty} {\frac{ e^{-x} }{ x } ~ dx}
+}
+
+\newcommand{\accuracy}{
+	$\varepsilon = 10^{-6} $
+}
+
+\section{Задача №2. Численно решить интеграл}
+	\subsection{Постановка задачи}
+		Четыремя методами численно вычислить следующий интеграл с 
+		точностью \accuracy. 
+		Реализацию решения проводить на языке «\Csh»:
+			\[ \task \]
+
+	\subsection{Решение}
+	
+		С помощью системы компьютерной математики WolframAlpha вычислим исходный интеграл:
+		\[ \task = -\Ei{-1} \approx 0.219384 \]
+		
+		Представим подинтегральную функцию в коде:
+		
+		\input{tasks/code/main_function}
+		
+		Так как верхняя граница интегрирования -- $ \infty $, найдем ее
+		численное значение:
+		
+		\input{tasks/code/find_upper_limit}
+		
+		\begin{enumerate}
+			\input{tasks/code/left_rectangle}
+			\input{tasks/code/right_rectangle}
+			\input{tasks/code/center_rectangle}
+			\newpage
+			\input{tasks/code/trapeze}
+		\end{enumerate}

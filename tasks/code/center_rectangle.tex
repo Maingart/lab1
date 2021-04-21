@@ -1,0 +1,25 @@
+\def \itemtitle {Метод средних прямоугольников на языке \textit \Csh}
+
+\item 
+	\itemtitle
+	 \[ \displaystyle \int \limits_{a}^{b} {f(x) ~ dx} 
+	 \approx \sum\limits_{i=1}^{n} f\left(\dfrac{x_{i-1} + x_{i}}{2}\right)( x_i - x_{i-1}) \]
+
+	\begin{lstlisting}[caption=\itemtitle]
+		static double CenterRectangle(
+		 double a, double b, double n
+		) {
+			var h = (b - a) / n;
+			var sum = (
+				Program.function(a) + Program.function(b)
+			) / 2;
+			for (var i = 1; i < n; i++)
+			{
+				var x = a + h * i;
+				sum += Program.function(x);
+			}
+			var result = h * sum;
+			return result;
+		}
+	\end{lstlisting}
+	Ответ: $\displaystyle \task$ $\approx$ 0.219383459287426, $\Delta$ = 0.000000540712574

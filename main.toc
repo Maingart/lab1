@@ -1,0 +1,12 @@
+\babel@toc {russian}{}
+\contentsline {section}{Введение}{2}%
+\contentsline {section}{Задача 1. Найти интеграл}{3}%
+\contentsline {subsection}{Постановка задачи}{3}%
+\contentsline {subsection}{Решение}{3}%
+\contentsline {section}{Задача №2. Численно решить интеграл}{4}%
+\contentsline {subsection}{Постановка задачи}{4}%
+\contentsline {subsection}{Решение}{4}%
+\contentsline {section}{Задача 3}{8}%
+\contentsline {subsection}{Постановка задачи}{8}%
+\contentsline {subsection}{Решение}{8}%
+\contentsline {section}{Заключение}{10}%
