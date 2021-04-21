@@ -3,7 +3,7 @@
 \contentsline {section}{Задача 1. Найти интеграл}{3}%
 \contentsline {subsection}{Постановка задачи}{3}%
 \contentsline {subsection}{Решение}{3}%
-\contentsline {section}{Задача №2. Численно решить интеграл}{4}%
+\contentsline {section}{Задача 2. Численно решить интеграл}{4}%
 \contentsline {subsection}{Постановка задачи}{4}%
 \contentsline {subsection}{Решение}{4}%
 \contentsline {section}{Задача 3}{8}%
